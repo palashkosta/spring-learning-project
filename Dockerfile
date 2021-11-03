@@ -4,7 +4,7 @@ WORKDIR /build/
 COPY build.gradle /build/
 COPY src /build/src
 
-RUN gralde clean assemble
+RUN gradle clean assemble
 
 COPY build/libs/spring-learning-project-${VERSION}.jar target/application.jar
 
